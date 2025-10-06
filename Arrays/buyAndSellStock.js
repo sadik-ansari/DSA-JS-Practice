@@ -1,4 +1,4 @@
-// Problem: Buy and Sell Stock (#217) - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+// Problem: Buy and Sell Stock (#121) - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 
 var maxProfit = function (prices) {
     let maxProfit = 0
