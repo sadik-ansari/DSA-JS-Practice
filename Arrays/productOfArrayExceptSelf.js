@@ -39,3 +39,21 @@ var productExceptSelf = function(nums) {
     return answer
 };
 console.log(productExceptSelf([1,2,3,4]))
+
+
+//Third Approach
+var productExceptSelf = function(nums) {
+    let answer = new Array(nums.length);
+    let prefix = 1
+    for(let i = 0; i < nums.length; i++){
+        answer[i] = prefix;
+        prefix *= nums[i]
+    }
+
+    let suffix = 1;
+    for(let i = nums.length - 1; i >= 0; i--){
+        answer[i] *= suffix;
+        suffix *= nums[i]
+    }
+    return answer
+};
