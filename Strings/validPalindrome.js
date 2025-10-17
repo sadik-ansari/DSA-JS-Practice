@@ -1,4 +1,4 @@
-// Problem: Valid Palindrome (#242) - https://leetcode.com/problems/valid-palindrome/description/
+// Problem: Valid Palindrome (#125) - https://leetcode.com/problems/valid-palindrome/description/
 
 var isPalindrome = function(s) {
     s = s.toLowerCase().replace(/[^a-z0-9]/g, '');
