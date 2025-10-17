@@ -11,3 +11,8 @@ var reverseString = function (s) {
         j--;
     }
 };
+
+//using built in functions
+var reverseString = function (s) {
+    s.reverse();
+};
