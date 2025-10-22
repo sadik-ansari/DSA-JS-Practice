@@ -1,4 +1,4 @@
-// Problem: Longest Common Prefix (#14) - https://leetcode.com/problems/longest-common-prefix/description/
+// Problem: Count and Say (#38) - https://leetcode.com/problems/count-and-say/description/
 
 var countAndSay = function (n) {
     let result = "1";
