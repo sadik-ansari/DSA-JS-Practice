@@ -42,18 +42,19 @@ console.log(productExceptSelf([1,2,3,4]))
 
 
 //Third Approach
-var productExceptSelf = function(nums) {
-    let answer = new Array(nums.length);
+var productExceptSelf = function (nums) {
+    let result = []
+
     let prefix = 1
-    for(let i = 0; i < nums.length; i++){
-        answer[i] = prefix;
+    for (let i = 0; i < nums.length; i++) {
+        result[i] = prefix
         prefix *= nums[i]
     }
 
-    let suffix = 1;
-    for(let i = nums.length - 1; i >= 0; i--){
-        answer[i] *= suffix;
-        suffix *= nums[i]
+    let suffix = 1
+    for (let j = nums.length - 1; j >= 0; j--) {
+        result[j] *= suffix
+        suffix *= nums[j]
     }
-    return answer
+    return result
 };
